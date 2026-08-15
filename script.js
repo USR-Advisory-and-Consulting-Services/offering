@@ -1,0 +1,1 @@
+document.querySelector('.hamb').addEventListener('click',()=>{const n=document.querySelector('nav');n.classList.toggle('show');});document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('show')));document.getElementById('year').textContent=new Date().getFullYear();
