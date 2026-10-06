@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: usr-advisory-tools-api
+    env: docker
+    dockerfilePath: ./tools-api/Dockerfile
+    dockerContext: ./tools-api
+    autoDeploy: true
+    healthCheckPath: /api/health
